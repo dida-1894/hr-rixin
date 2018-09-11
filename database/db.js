@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var db = mongoose.connect('mongodb://127.0.0.1:27017/hr_app_node');
+var db = mongoose.connect('mongodb://127.0.0.1:27017/rixin_hr');
 
 db.connection.on('error', function(error) {
     console.log("connect mongodb fail : " + error);

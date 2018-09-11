@@ -30,6 +30,10 @@ var mySwiper = new Swiper('.swiper-container', {
             swiperAnimate(swiper);
         }, 1000);
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     onSlideChangeEnd: function(swiper) {
         swiperAnimate(swiper);
     },
