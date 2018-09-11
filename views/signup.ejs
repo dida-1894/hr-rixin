@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>日新招新了</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+
+<body>
+	<style>
+		.show-info{
+			padding-top: 10px;
+			font-size: 16px;
+			font-family: "微软雅黑";
+		}
+		.show-info .show-name{
+			text-align: right;
+			letter-spacing: 2px;
+		}
+	</style>
+    <section class="col-xs-12 show-info">
+    	<% var items=JSON.parse(info).data%>
+    	<% for(var i = 0; i<items.length ; i++){ %>
+        <div class="panel panel-success">
+            <div class="panel-body">
+                <div class="row">
+                	<div class="col-xs-4 show-name">姓名</div>
+                	<div class="col-xs-8 show-detail"><%= items[i].name %></div>
+                </div>
+                <div class="row">
+                	<div class="col-xs-4 show-name">电话号码</div>
+                	<div class="col-xs-8 show-detail"><%= items[i].telephone %></div>
+                </div>
+                <div class="row">
+                	<div class="col-xs-4 show-name">所在学院</div>
+                	<div class="col-xs-8 show-detail"><%= items[i].depart %></div>
+                </div>
+                <div class="row">
+                	<div class="col-xs-4 show-name">应聘中心</div>
+                	<div class="col-xs-8 show-detail"><%= items[i].center %></div>
+                </div>
+                <div class="row">
+                	<div class="col-xs-4 show-name">应聘部门</div>
+                	<div class="col-xs-8 show-detail"><%= items[i].part %></div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </section>
+</body>
+
+</html>

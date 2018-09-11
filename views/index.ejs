@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>日新招新了</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <script type="text/javascript">
+    var phoneWidth = parseInt(window.screen.width);
+    var phoneScale = phoneWidth / 640;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+            document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+        } else {
+            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+    </script>
+    <link rel="stylesheet" href="/stylesheets/swiper.min.css">
+    <link rel="stylesheet" href="/stylesheets/animate.min.css">
+    <link rel="stylesheet" href="/stylesheets/global.min.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <article class="swiper-slide swiper-slide2" data-hash="page1">
+                <div class="col-xs-12 sign">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <img src="/images/logo.png" alt="" />
+                    </div>
+                    <form action="/signup" method="post" >
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide2_name">姓名</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide2_name" name="slide_name" placeholder="姓名" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide2_telephone">电话号码</label>
+                            <div class="col-xs-12">
+                                <input type="tel" id="slide2_telephone" name="slide_telephone" placeholder="电话号码" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide2_depart">所在学院</label>
+                            <div class="col-xs-12">
+                                <select id="slide2_depart" name="slide_depart">
+                                    <option value="软件学院">软件学院</option>
+                                    <option value="电气与电子工程学院">电气与电子工程学院</option>
+                                    <option value="土木建筑学院">土木建筑学院</option>
+                                    <option value="机电与车辆工程学院">机电与车辆工程学院</option>
+                                    <option value="电气与自动化工程学院">电气与自动化工程学院</option>
+                                    <option value="信息工程学院">信息工程学院</option>
+                                    <option value="体育学院">体育学院</option>
+                                    <option value="理学院">理学院</option>
+                                    <option value="外国语学院">外国语学院</option>
+                                    <option value="艺术学院">艺术学院</option>
+                                    <option value="国防生学院">国防生学院</option>
+                                    <option value="经济管理学院">经济管理学院</option>
+                                    <option value="人文社会科学学院">人文社会科学学院</option>
+                                    <option value="马克思主义学院">马克思主义学院</option>
+                                    <option value="国际学院">国际学院</option>
+                                    <option value="交通运输与物流学院">交通运输与物流学院</option>
+                                    <option value="继续教育学院">继续教育学院</option>
+                                    <option value="材料科学与工程学院">材料科学与工程学院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide2_center">想要应聘的中心</label>
+                            <div class="col-xs-12">
+                                <select id="slide2_center" name="slide_center">
+                                    <option value="技术研发中心">技术研发中心</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide2_part">想要应聘的部门</label>
+                            <div class="col-xs-12">
+                                <select id="slide2_part" name="slide_part">
+                                    <option value="网建部">网建部</option>
+                                    <option value="移动开发部">移动开发部</option>
+                                    <option value="设计部">设计部</option>
+                                    <option value="产品部">产品部</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <input class="form-submit" type="submit" value="OK" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <img class="slide2-back" src="/images/back.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 page">
+                    <div class="col-xs-2 col-xs-offset-5 slide2-join">
+                        <div class="slide2-joinBtn ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.6s" swiper-animate-delay="2s"></div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left: 30px;">
+                        <img src="/images/slide1-2-min.jpg" class="img-rounded img-responsive" alt="">
+                    </div>
+                    <h2 class="col-xs-8 col-xs-offset-2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">技术研发</h2>
+                    <section class="col-xs-8 col-xs-offset-2">
+                        <div class="col-xs-4 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                            <div class="power">8.4</div>
+                            <span>装逼指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s">
+                            <div class="power">8.3</div>
+                            <span>闷骚指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.4s" swiper-animate-delay="1.4s">
+                            <div class="power">7.4</div>
+                            <span>屌丝指数</span>
+                        </div>
+                    </section>
+                    <h3 class="col-xs-10 col-xs-offset-1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">技术研发中心包含网建部、移动开发部、设计部和产品部，这里是程序猿、产品狗和设计狮撕逼圣地，让我们一起Coding吧</h3>
+                </div>
+            </article>
+            <article class="swiper-slide swiper-slide3" data-hash="page2">
+                <div class="col-xs-12 sign">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <img src="/images/logo.png" alt="" />
+                    </div>
+                    <form action="/signup" method="post">
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide3_name">姓名</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide3_name" name="slide_name" placeholder="姓名" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide3_telephone">电话号码</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide3_telephone" name="slide_telephone" placeholder="电话号码" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide3_depart">所在学院</label>
+                            <div class="col-xs-12">
+                                <select id="slide3_depart" name="slide_depart">
+                                    <option value="软件学院">软件学院</option>
+                                    <option value="电气与电子工程学院">电气与电子工程学院</option>
+                                    <option value="土木建筑学院">土木建筑学院</option>
+                                    <option value="机电与车辆工程学院">机电与车辆工程学院</option>
+                                    <option value="电气与自动化工程学院">电气与自动化工程学院</option>
+                                    <option value="信息工程学院">信息工程学院</option>
+                                    <option value="体育学院">体育学院</option>
+                                    <option value="理学院">理学院</option>
+                                    <option value="外国语学院">外国语学院</option>
+                                    <option value="艺术学院">艺术学院</option>
+                                    <option value="国防生学院">国防生学院</option>
+                                    <option value="经济管理学院">经济管理学院</option>
+                                    <option value="人文社会科学学院">人文社会科学学院</option>
+                                    <option value="马克思主义学院">马克思主义学院</option>
+                                    <option value="国际学院">国际学院</option>
+                                    <option value="交通运输与物流学院">交通运输与物流学院</option>
+                                    <option value="继续教育学院">继续教育学院</option>
+                                    <option value="材料科学与工程学院">材料科学与工程学院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide3_center">想要应聘的中心</label>
+                            <div class="col-xs-12">
+                                <select id="slide3_center" name="slide_center">
+                                    <option value="行政管理中心">行政管理中心</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide3_part">想要应聘的部门</label>
+                            <div class="col-xs-12">
+                                <select id="slide3_part" name="slide_part">
+                                  <option value="技术部">技术部</option>
+                                  <option value="办公管理处">办公管理处</option>
+                                  <option value="外联活动处">外联活动处</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <input class="form-submit" type="submit" value="OK" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <img class="slide3-back" src="/images/back.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 page">
+                    <div class="col-xs-2 col-xs-offset-5 slide3-join">
+                        <div class="slide3-joinBtn ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.6s" swiper-animate-delay="2s"></div>
+                    </div>
+                    <div class="col-xs-11">
+                        <img src="/images/slide2-1-min.jpg" class="img-rounded img-responsive" alt="">
+                    </div>
+                    <h2 class="col-xs-8 col-xs-offset-2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">行政中心</h2>
+                    <section class="col-xs-8 col-xs-offset-2">
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                            <div class="power">8.7</div>
+                            <span>装逼指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s">
+                            <div class="power">8.3</div>
+                            <span>闷骚指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.4s" swiper-animate-delay="1.4s">
+                            <div class="power">9.4</div>
+                            <span>屌丝指数</span>
+                        </div>
+                    </section>
+                    <h3 class="col-xs-10 col-xs-offset-1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">这里是日新的高逼格中心，下属办公管理处和外联活动处以及技术部，负责日新的日常行政的办公事物，低调的我们期待你的加入!</h3>
+                </div>
+            </article>
+            <article class="swiper-slide swiper-slide4" data-hash="page3">
+                <div class="col-xs-12 sign">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <img src="/images/logo.png" alt="" />
+                    </div>
+                    <form action="/signup" method="post">
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide4_name">姓名</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide4_name" name="slide_name" placeholder="姓名" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide4_telephone">电话号码</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide4_telephone" name="slide_telephone" placeholder="电话号码" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide4_depart">所在学院</label>
+                            <div class="col-xs-12">
+                                <select id="slide4_depart" name="slide_depart">
+                                    <option value="软件学院">软件学院</option>
+                                    <option value="电气与电子工程学院">电气与电子工程学院</option>
+                                    <option value="土木建筑学院">土木建筑学院</option>
+                                    <option value="机电与车辆工程学院">机电与车辆工程学院</option>
+                                    <option value="电气与自动化工程学院">电气与自动化工程学院</option>
+                                    <option value="信息工程学院">信息工程学院</option>
+                                    <option value="体育学院">体育学院</option>
+                                    <option value="理学院">理学院</option>
+                                    <option value="外国语学院">外国语学院</option>
+                                    <option value="艺术学院">艺术学院</option>
+                                    <option value="国防生学院">国防生学院</option>
+                                    <option value="经济管理学院">经济管理学院</option>
+                                    <option value="人文社会科学学院">人文社会科学学院</option>
+                                    <option value="马克思主义学院">马克思主义学院</option>
+                                    <option value="国际学院">国际学院</option>
+                                    <option value="交通运输与物流学院">交通运输与物流学院</option>
+                                    <option value="继续教育学院">继续教育学院</option>
+                                    <option value="材料科学与工程学院">材料科学与工程学院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide4_center">想要应聘的中心</label>
+                            <div class="col-xs-12">
+                                <select id="slide4_center" name="slide_center">
+                                    <option value="新闻出版中心">新闻出版中心</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide4_part">想要应聘的部门</label>
+                            <div class="col-xs-12">
+                                <select id="slide4_part" name="slide_part">
+                                  <option value="记者团">记者团</option>
+                                  <option value="新媒体办公室">新媒体办公室</option>
+                                  <option value="编辑部">编辑部</option>
+                                    <option value="微博运营团队">微博运营团队</option>
+                                    <option value="微信运营团队">微信运营团队</option>
+                                    <option value="QQ运营团队">QQ运营团队</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <input class="form-submit" type="submit" value="OK" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <img class="slide4-back" src="/images/back.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 page">
+                    <div class="col-xs-2 col-xs-offset-5 slide4-join">
+                        <div class="slide4-joinBtn ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.6s" swiper-animate-delay="2s"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <img src="/images/slide3-1-min.jpg" class="img-rounded img-responsive" alt="">
+                    </div>
+                    <h2 class="col-xs-8 col-xs-offset-2 ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">新闻出版</h2>
+                    <section class="col-xs-8 col-xs-offset-2">
+                        <div class="col-xs-4 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.6s" swiper-animate-delay="1.6s">
+                            <div class="power">8.5</div>
+                            <span>装逼指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                            <div class="power">7.4</div>
+                            <span>闷骚指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.6s" swiper-animate-delay="1.6s">
+                            <div class="power">8.4</div>
+                            <span>屌丝指数</span>
+                        </div>
+                    </section>
+                    <h3 class="col-xs-10 col-xs-offset-1 ani" swiper-animate-effect="rotateInUpRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">这里包含新媒体办公室，编辑部，记者团，微博，QQ运行团队，快来加入我们，从文字小白晋升为新闻大佬，这是一条“高速公路”。</h3>
+                </div>
+            </article>
+            <article class="swiper-slide swiper-slide5" data-hash="page4">
+                <div class="col-xs-12 sign">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <img src="/images/logo.png" alt="" />
+                    </div>
+                    <form action="/signup" method="post">
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide5_name">姓名</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide5_name" name="slide_name" placeholder="姓名" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide5_telephone">电话号码</label>
+                            <div class="col-xs-12">
+                                <input type="text" id="slide5_telephone" name="slide_telephone" placeholder="电话号码" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide5_depart">所在学院</label>
+                            <div class="col-xs-12">
+                                <select id="slide5_depart" name="slide_depart">
+                                    <option value="软件学院">软件学院</option>
+                                    <option value="电气与电子工程学院">电气与电子工程学院</option>
+                                    <option value="土木建筑学院">土木建筑学院</option>
+                                    <option value="机电与车辆工程学院">机电与车辆工程学院</option>
+                                    <option value="电气与自动化工程学院">电气与自动化工程学院</option>
+                                    <option value="信息工程学院">信息工程学院</option>
+                                    <option value="体育学院">体育学院</option>
+                                    <option value="理学院">理学院</option>
+                                    <option value="外国语学院">外国语学院</option>
+                                    <option value="艺术学院">艺术学院</option>
+                                    <option value="国防生学院">国防生学院</option>
+                                    <option value="经济管理学院">经济管理学院</option>
+                                    <option value="人文社会科学学院">人文社会科学学院</option>
+                                    <option value="马克思主义学院">马克思主义学院</option>
+                                    <option value="国际学院">国际学院</option>
+                                    <option value="交通运输与物流学院">交通运输与物流学院</option>
+                                    <option value="继续教育学院">继续教育学院</option>
+                                    <option value="材料科学与工程学院">材料科学与工程学院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide5_center">想要应聘的中心</label>
+                            <div class="col-xs-12">
+                                <select id="slide5_center" name="slide_center">
+                                    <option value="产品运营中心">产品运营中心</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <label class="col-xs-12" for="slide5_part">想要应聘的部门</label>
+                            <div class="col-xs-12">
+                                <select id="slide5_part" name="slide_part">
+                                    <option value="日新视觉">日新视觉</option>
+                                    <option value="日新影视">日新影视</option>
+                                    <option value="设计组">设计组</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <input class="form-submit" type="submit" value="OK" />
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 form-item">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <img class="slide5-back" src="/images/back.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 page">
+                    <div class="col-xs-2 col-xs-offset-5 slide5-join">
+                        <div class="slide5-joinBtn ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.6s" swiper-animate-delay="2.2s"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <img src="/images/slide4-1-min.jpg" class="img-rounded img-responsive" alt="">
+                    </div>
+                    <h2 class="col-xs-8 col-xs-offset-2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">产品中心</h2>
+                    <section class="col-xs-8 col-xs-offset-2">
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1.6s" swiper-animate-delay="1.6s">
+                            <div class="power">8.3</div>
+                            <span>装逼指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="1s">
+                            <div class="power">8.1</div>
+                            <span>闷骚指数</span>
+                        </div>
+                        <div class="col-xs-4 ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1.6s" swiper-animate-delay="1.6s">
+                            <div class="power">8.4</div>
+                            <span>屌丝指数</span>
+                        </div>
+                    </section>
+                    <h3 class="col-xs-10 col-xs-offset-1 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">这里包含影视工作室，视觉摄影工作室，创策工作室和创影工作室，等你一起来打造交大头条，搞最有逼格的产品，做最有格调的报告！</h3>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+        <audio id="bgMusic" src="/music/background.mp3" preload="auto" autoplay loop></audio>
+    </section>
+    <script src="/javascripts/jquery-2.1.3.min.js"></script>
+    <script src="/javascripts/swiper.min.js"></script>
+    <script src="/javascripts/swiper.animate.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+</body>
+
+</html>
